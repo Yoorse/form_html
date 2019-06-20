@@ -1,0 +1,25 @@
+
+header.title-page {
+  background: url('./images/background-header.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header.title-page h1 {
+  color: #fff;
+  padding: 20px;
+  text-align:center;
+}
+
+header.title-page .title {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.lead-paragraph {
+  margin: 15px;
+  font-weight: 500;
+}

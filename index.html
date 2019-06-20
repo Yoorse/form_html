@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="MobileOptimized" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create User</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <header class="title-page">
+    <div class="title">
+      <h1>Welcome, please fill out the form</h1>
+    </div>
+  </header>
+  <div class="container">
+    <p class="lead text-center lead-paragraph">Input user info here</p>
+    <form action="csv.php" method="post" id="register-form">
+      <div class="form-group">
+        <label for="email">mail</label>
+        <input type="name" name="name" class="form-control" placeholder="John" required>
+      </div>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" name="username" class="form-control" placeholder="username" required>
+      </div>
+      <div class="form-group">
+        <label for="telephone">Telepone Number</label>
+        <input type="text" name="phone-number" class="form-control" placeholder="123456789">
+       <div class="row">
+         <input type="checkbox" name="User 1" value="User 1"> User 1 <br>
+         <input type="checkbox" name="User 2" value="User 2"> User 2 <br>
+       </div>
+
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+  </div>
+</body>
+</html>
