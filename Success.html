@@ -1,0 +1,43 @@
+<?php
+
+    $email = $_POST['email'];
+    $username = $_POST['username'];
+    $telephone = $_POST['telephone'];
+
+    $headers=array_keys($_POST);
+
+
+    $file = $_POST['username'].date('ymdhis).".csv"; //filename
+    $file = fopen($file, 'a');
+    fputcsv($file, $headers);
+    fputcsv($file, $_POST);
+    fclose($file);
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="MobileOptimized" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create User</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <header class="title-page">
+    <div class="success">
+      <h1>Successfully created user</h1>
+    </div>
+  </header>
+
+    <div class="wrapper">
+    <form action="index.html" method="post" id="register-form">
+      <button type="submit" class="btn btn-primary" onclick="index.html">Home</button>
+    </form>
+      </div>
+</body>
+</html>
